@@ -1,0 +1,3 @@
+2025-03-20 16:49:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]if exists users( id int auto_increment primary key"; expected "identifier"; SQL statement:
+create table if exists users( id int auto_increment primary key [42001-214]
