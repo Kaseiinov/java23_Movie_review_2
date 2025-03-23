@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto getUserById(int id) {
         User user = userDao.getUserById(id)
-                .orElseThrow(() -> new UserNotFoundException());
+                .orElseThrow(UserNotFoundException::new);
         return UserDto.builder()
                 .id(user.getId())
                 .name(user.getName())
