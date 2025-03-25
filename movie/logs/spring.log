@@ -1,0 +1,1146 @@
+2025-03-25T00:00:08.137+06:00  INFO 11736 --- [Movie Review] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-25T00:00:08.176+06:00  INFO 11736 --- [Movie Review] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-25T00:00:08.193+06:00  INFO 11736 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T00:00:08.199+06:00  INFO 11736 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-25T00:01:45.921+06:00  INFO 26560 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 26560 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T00:01:45.931+06:00  INFO 26560 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T00:01:49.385+06:00  INFO 26560 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T00:01:49.422+06:00  INFO 26560 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T00:01:49.423+06:00  INFO 26560 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T00:01:49.569+06:00  INFO 26560 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T00:01:49.570+06:00  INFO 26560 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3507 ms
+2025-03-25T00:01:49.896+06:00  INFO 26560 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T00:01:50.612+06:00  INFO 26560 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T00:01:50.617+06:00  INFO 26560 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T00:01:50.743+06:00  INFO 26560 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T00:01:51.140+06:00  INFO 26560 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T00:01:51.778+06:00  INFO 26560 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T00:01:51.788+06:00  INFO 26560 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T00:01:51.827+06:00  INFO 26560 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T00:01:51.836+06:00  INFO 26560 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T00:01:51.843+06:00  INFO 26560 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T00:01:51.854+06:00  INFO 26560 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T00:01:51.995+06:00  INFO 26560 --- [Movie Review] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-25T00:01:52.001+06:00  INFO 26560 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T00:01:52.039+06:00  INFO 26560 --- [Movie Review] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-25T00:01:52.040+06:00  INFO 26560 --- [Movie Review] [main] liquibase.util                           : Run:                          0
+2025-03-25T00:01:52.043+06:00  INFO 26560 --- [Movie Review] [main] liquibase.util                           : Previously run:               9
+2025-03-25T00:01:52.045+06:00  INFO 26560 --- [Movie Review] [main] liquibase.util                           : Filtered out:                 0
+2025-03-25T00:01:52.045+06:00  INFO 26560 --- [Movie Review] [main] liquibase.util                           : -------------------------------
+2025-03-25T00:01:52.045+06:00  INFO 26560 --- [Movie Review] [main] liquibase.util                           : Total change sets:            9
+2025-03-25T00:01:52.050+06:00  INFO 26560 --- [Movie Review] [main] liquibase.util                           : Update summary generated
+2025-03-25T00:01:52.056+06:00  INFO 26560 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T00:01:54.112+06:00  INFO 26560 --- [Movie Review] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-25T00:01:55.281+06:00  INFO 26560 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-03-25T00:01:55.304+06:00  INFO 26560 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Started MovieApplication in 11.04 seconds (process running for 12.976)
+2025-03-25T00:02:21.102+06:00  INFO 26560 --- [Movie Review] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-25T00:02:21.129+06:00  INFO 26560 --- [Movie Review] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-25T00:02:21.145+06:00  INFO 26560 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T00:02:21.150+06:00  INFO 26560 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-25T00:02:29.132+06:00  INFO 19008 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 19008 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T00:02:29.141+06:00  INFO 19008 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T00:02:32.555+06:00  INFO 19008 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T00:02:32.586+06:00  INFO 19008 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T00:02:32.587+06:00  INFO 19008 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T00:02:32.724+06:00  INFO 19008 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T00:02:32.725+06:00  INFO 19008 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3458 ms
+2025-03-25T00:02:33.067+06:00  INFO 19008 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T00:02:33.793+06:00  INFO 19008 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T00:02:33.797+06:00  INFO 19008 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T00:02:33.925+06:00  INFO 19008 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T00:02:34.307+06:00  INFO 19008 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T00:02:35.127+06:00  INFO 19008 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T00:02:35.139+06:00  INFO 19008 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T00:02:35.190+06:00  INFO 19008 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T00:02:35.199+06:00  INFO 19008 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T00:02:35.209+06:00  INFO 19008 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T00:02:35.224+06:00  INFO 19008 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T00:02:35.428+06:00  INFO 19008 --- [Movie Review] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-25T00:02:35.434+06:00  INFO 19008 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T00:02:35.468+06:00  INFO 19008 --- [Movie Review] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-25T00:02:35.469+06:00  INFO 19008 --- [Movie Review] [main] liquibase.util                           : Run:                          0
+2025-03-25T00:02:35.470+06:00  INFO 19008 --- [Movie Review] [main] liquibase.util                           : Previously run:               9
+2025-03-25T00:02:35.470+06:00  INFO 19008 --- [Movie Review] [main] liquibase.util                           : Filtered out:                 0
+2025-03-25T00:02:35.471+06:00  INFO 19008 --- [Movie Review] [main] liquibase.util                           : -------------------------------
+2025-03-25T00:02:35.471+06:00  INFO 19008 --- [Movie Review] [main] liquibase.util                           : Total change sets:            9
+2025-03-25T00:02:35.476+06:00  INFO 19008 --- [Movie Review] [main] liquibase.util                           : Update summary generated
+2025-03-25T00:02:35.482+06:00  INFO 19008 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T00:02:37.982+06:00  INFO 19008 --- [Movie Review] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-25T00:02:39.476+06:00  INFO 19008 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-03-25T00:02:39.494+06:00  INFO 19008 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Started MovieApplication in 12.042 seconds (process running for 13.996)
+2025-03-25T06:51:40.960+06:00  WARN 19008 --- [Movie Review] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h14m35s767ms741µs500ns).
+2025-03-25T07:03:52.742+06:00  INFO 19008 --- [Movie Review] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-25T07:03:52.808+06:00  INFO 19008 --- [Movie Review] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-25T07:03:52.866+06:00  INFO 19008 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T07:03:52.898+06:00  INFO 19008 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-25T07:08:39.557+06:00  INFO 29100 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 29100 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T07:08:39.562+06:00  INFO 29100 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T07:08:42.724+06:00  INFO 29100 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T07:08:42.756+06:00  INFO 29100 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T07:08:42.765+06:00  INFO 29100 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T07:08:43.877+06:00  INFO 29100 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T07:08:43.878+06:00  INFO 29100 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4053 ms
+2025-03-25T07:08:44.886+06:00  INFO 29100 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T07:08:46.682+06:00  INFO 29100 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T07:08:46.686+06:00  INFO 29100 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T07:08:46.837+06:00  INFO 29100 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T07:08:47.199+06:00  INFO 29100 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T07:08:47.804+06:00  INFO 29100 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:08:47.812+06:00  INFO 29100 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T07:08:47.855+06:00  INFO 29100 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T07:08:47.863+06:00  INFO 29100 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T07:08:47.870+06:00  INFO 29100 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T07:08:47.879+06:00  INFO 29100 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T07:08:48.018+06:00  INFO 29100 --- [Movie Review] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-25T07:08:48.041+06:00  INFO 29100 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:08:48.082+06:00  INFO 29100 --- [Movie Review] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-25T07:08:48.085+06:00  INFO 29100 --- [Movie Review] [main] liquibase.util                           : Run:                          0
+2025-03-25T07:08:48.085+06:00  INFO 29100 --- [Movie Review] [main] liquibase.util                           : Previously run:               9
+2025-03-25T07:08:48.085+06:00  INFO 29100 --- [Movie Review] [main] liquibase.util                           : Filtered out:                 0
+2025-03-25T07:08:48.086+06:00  INFO 29100 --- [Movie Review] [main] liquibase.util                           : -------------------------------
+2025-03-25T07:08:48.086+06:00  INFO 29100 --- [Movie Review] [main] liquibase.util                           : Total change sets:            9
+2025-03-25T07:08:48.089+06:00  INFO 29100 --- [Movie Review] [main] liquibase.util                           : Update summary generated
+2025-03-25T07:08:48.091+06:00  INFO 29100 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T07:08:49.755+06:00  INFO 29100 --- [Movie Review] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-25T07:08:50.366+06:00  INFO 29100 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-03-25T07:08:50.377+06:00  INFO 29100 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Started MovieApplication in 12.851 seconds (process running for 24.001)
+2025-03-25T07:09:12.824+06:00  INFO 29100 --- [Movie Review] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-25T07:09:12.824+06:00  INFO 29100 --- [Movie Review] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-25T07:09:12.824+06:00  INFO 29100 --- [Movie Review] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-25T07:09:13.020+06:00 ERROR 29100 --- [Movie Review] [http-nio-8089-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.springframework.web.multipart.MultipartFile.getOriginalFilename()" because "file" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.springframework.web.multipart.MultipartFile.getOriginalFilename()" because "file" is null
+	at kg.attractor.movie.util.FileUtil.saveUploadFile(FileUtil.java:56) ~[classes/:na]
+	at kg.attractor.movie.service.impl.ImageServiceImpl.saveImage(ImageServiceImpl.java:24) ~[classes/:na]
+	at kg.attractor.movie.controller.ImageController.uploadImage(ImageController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-25T07:09:18.110+06:00  WARN 29100 --- [Movie Review] [http-nio-8089-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-03-25T07:09:19.544+06:00  WARN 29100 --- [Movie Review] [http-nio-8089-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-03-25T07:09:46.949+06:00  INFO 29100 --- [Movie Review] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-25T07:09:46.963+06:00  INFO 29100 --- [Movie Review] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-25T07:09:46.971+06:00  INFO 29100 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T07:09:46.973+06:00  INFO 29100 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-25T07:09:59.238+06:00  INFO 24120 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 24120 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T07:09:59.243+06:00  INFO 24120 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T07:10:01.757+06:00  INFO 24120 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T07:10:01.785+06:00  INFO 24120 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T07:10:01.786+06:00  INFO 24120 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T07:10:01.927+06:00  INFO 24120 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T07:10:01.928+06:00  INFO 24120 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2556 ms
+2025-03-25T07:10:02.272+06:00  INFO 24120 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T07:10:02.836+06:00  INFO 24120 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T07:10:02.841+06:00  INFO 24120 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T07:10:02.946+06:00  INFO 24120 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T07:10:03.260+06:00  INFO 24120 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T07:10:03.781+06:00  INFO 24120 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:10:03.788+06:00  INFO 24120 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T07:10:03.820+06:00  INFO 24120 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T07:10:03.827+06:00  INFO 24120 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T07:10:03.832+06:00  INFO 24120 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T07:10:03.842+06:00  INFO 24120 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T07:10:03.947+06:00  INFO 24120 --- [Movie Review] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-25T07:10:03.950+06:00  INFO 24120 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:10:03.968+06:00  INFO 24120 --- [Movie Review] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-25T07:10:03.968+06:00  INFO 24120 --- [Movie Review] [main] liquibase.util                           : Run:                          0
+2025-03-25T07:10:03.969+06:00  INFO 24120 --- [Movie Review] [main] liquibase.util                           : Previously run:               9
+2025-03-25T07:10:03.969+06:00  INFO 24120 --- [Movie Review] [main] liquibase.util                           : Filtered out:                 0
+2025-03-25T07:10:03.969+06:00  INFO 24120 --- [Movie Review] [main] liquibase.util                           : -------------------------------
+2025-03-25T07:10:03.969+06:00  INFO 24120 --- [Movie Review] [main] liquibase.util                           : Total change sets:            9
+2025-03-25T07:10:03.972+06:00  INFO 24120 --- [Movie Review] [main] liquibase.util                           : Update summary generated
+2025-03-25T07:10:03.974+06:00  INFO 24120 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T07:10:05.594+06:00  INFO 24120 --- [Movie Review] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-25T07:10:06.268+06:00  INFO 24120 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-03-25T07:10:06.288+06:00  INFO 24120 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Started MovieApplication in 8.18 seconds (process running for 11.561)
+2025-03-25T07:10:12.007+06:00  INFO 24120 --- [Movie Review] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-25T07:10:12.007+06:00  INFO 24120 --- [Movie Review] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-25T07:10:12.009+06:00  INFO 24120 --- [Movie Review] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-25T07:10:59.584+06:00  WARN 24120 --- [Movie Review] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s637ms697µs800ns).
+2025-03-25T07:11:22.887+06:00 ERROR 24120 --- [Movie Review] [http-nio-8089-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.springframework.web.multipart.MultipartFile.getOriginalFilename()" because "file" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.springframework.web.multipart.MultipartFile.getOriginalFilename()" because "file" is null
+	at kg.attractor.movie.util.FileUtil.saveUploadFile(FileUtil.java:56) ~[classes/:na]
+	at kg.attractor.movie.service.impl.ImageServiceImpl.saveImage(ImageServiceImpl.java:24) ~[classes/:na]
+	at kg.attractor.movie.controller.ImageController.uploadImage(ImageController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-25T07:12:05.590+06:00  INFO 24120 --- [Movie Review] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-25T07:12:05.607+06:00  INFO 24120 --- [Movie Review] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-25T07:12:05.622+06:00  INFO 24120 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T07:12:05.684+06:00  INFO 24120 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-25T07:12:12.893+06:00  INFO 12308 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 12308 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T07:12:12.899+06:00  INFO 12308 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T07:12:15.180+06:00  INFO 12308 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T07:12:15.202+06:00  INFO 12308 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T07:12:15.203+06:00  INFO 12308 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T07:12:15.298+06:00  INFO 12308 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T07:12:15.299+06:00  INFO 12308 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2256 ms
+2025-03-25T07:12:15.650+06:00  INFO 12308 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T07:12:16.201+06:00  INFO 12308 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T07:12:16.204+06:00  INFO 12308 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T07:12:16.302+06:00  INFO 12308 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T07:12:16.765+06:00  INFO 12308 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T07:12:17.509+06:00  INFO 12308 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:12:17.518+06:00  INFO 12308 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T07:12:17.549+06:00  INFO 12308 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T07:12:17.555+06:00  INFO 12308 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T07:12:17.561+06:00  INFO 12308 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T07:12:17.570+06:00  INFO 12308 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T07:12:19.060+06:00  INFO 12308 --- [Movie Review] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-25T07:12:19.065+06:00  INFO 12308 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:12:19.115+06:00  INFO 12308 --- [Movie Review] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-25T07:12:19.116+06:00  INFO 12308 --- [Movie Review] [main] liquibase.util                           : Run:                          0
+2025-03-25T07:12:19.116+06:00  INFO 12308 --- [Movie Review] [main] liquibase.util                           : Previously run:               9
+2025-03-25T07:12:19.116+06:00  INFO 12308 --- [Movie Review] [main] liquibase.util                           : Filtered out:                 0
+2025-03-25T07:12:19.117+06:00  INFO 12308 --- [Movie Review] [main] liquibase.util                           : -------------------------------
+2025-03-25T07:12:19.117+06:00  INFO 12308 --- [Movie Review] [main] liquibase.util                           : Total change sets:            9
+2025-03-25T07:12:19.121+06:00  INFO 12308 --- [Movie Review] [main] liquibase.util                           : Update summary generated
+2025-03-25T07:12:19.128+06:00  INFO 12308 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T07:12:21.676+06:00  INFO 12308 --- [Movie Review] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-25T07:12:23.567+06:00  INFO 12308 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-03-25T07:12:23.610+06:00  INFO 12308 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Started MovieApplication in 11.868 seconds (process running for 13.871)
+2025-03-25T07:12:23.924+06:00  INFO 12308 --- [Movie Review] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-25T07:12:23.925+06:00  INFO 12308 --- [Movie Review] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-25T07:12:23.927+06:00  INFO 12308 --- [Movie Review] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-25T07:13:24.771+06:00  WARN 12308 --- [Movie Review] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s462ms323µs).
+2025-03-25T07:13:24.800+06:00 ERROR 12308 --- [Movie Review] [http-nio-8089-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.springframework.web.multipart.MultipartFile.getOriginalFilename()" because "file" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.springframework.web.multipart.MultipartFile.getOriginalFilename()" because "file" is null
+	at kg.attractor.movie.util.FileUtil.saveUploadFile(FileUtil.java:56) ~[classes/:na]
+	at kg.attractor.movie.service.impl.ImageServiceImpl.saveImage(ImageServiceImpl.java:24) ~[classes/:na]
+	at kg.attractor.movie.controller.ImageController.uploadImage(ImageController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-25T07:13:24.871+06:00  INFO 12308 --- [Movie Review] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-25T07:13:25.089+06:00  INFO 12308 --- [Movie Review] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-25T07:13:25.335+06:00  INFO 12308 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T07:13:25.378+06:00  INFO 12308 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-25T07:13:32.769+06:00  INFO 26752 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 26752 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T07:13:32.774+06:00  INFO 26752 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T07:13:35.102+06:00  INFO 26752 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T07:13:35.123+06:00  INFO 26752 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T07:13:35.123+06:00  INFO 26752 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T07:13:35.204+06:00  INFO 26752 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T07:13:35.204+06:00  INFO 26752 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2352 ms
+2025-03-25T07:13:35.459+06:00  INFO 26752 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T07:13:35.923+06:00  INFO 26752 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T07:13:35.923+06:00  INFO 26752 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T07:13:36.005+06:00  INFO 26752 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T07:13:36.228+06:00  INFO 26752 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T07:13:36.650+06:00  INFO 26752 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:13:36.654+06:00  INFO 26752 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T07:13:36.683+06:00  INFO 26752 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T07:13:36.690+06:00  INFO 26752 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T07:13:36.693+06:00  INFO 26752 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T07:13:36.703+06:00  INFO 26752 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T07:13:36.792+06:00  INFO 26752 --- [Movie Review] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-25T07:13:36.792+06:00  INFO 26752 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:13:36.802+06:00  INFO 26752 --- [Movie Review] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-25T07:13:36.802+06:00  INFO 26752 --- [Movie Review] [main] liquibase.util                           : Run:                          0
+2025-03-25T07:13:36.802+06:00  INFO 26752 --- [Movie Review] [main] liquibase.util                           : Previously run:               9
+2025-03-25T07:13:36.802+06:00  INFO 26752 --- [Movie Review] [main] liquibase.util                           : Filtered out:                 0
+2025-03-25T07:13:36.802+06:00  INFO 26752 --- [Movie Review] [main] liquibase.util                           : -------------------------------
+2025-03-25T07:13:36.802+06:00  INFO 26752 --- [Movie Review] [main] liquibase.util                           : Total change sets:            9
+2025-03-25T07:13:36.802+06:00  INFO 26752 --- [Movie Review] [main] liquibase.util                           : Update summary generated
+2025-03-25T07:13:36.802+06:00  INFO 26752 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T07:13:38.193+06:00  INFO 26752 --- [Movie Review] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-25T07:13:38.804+06:00  INFO 26752 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-03-25T07:13:38.817+06:00  INFO 26752 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Started MovieApplication in 7.182 seconds (process running for 8.512)
+2025-03-25T07:13:54.268+06:00  INFO 26752 --- [Movie Review] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-25T07:13:54.270+06:00  INFO 26752 --- [Movie Review] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-25T07:13:54.270+06:00  INFO 26752 --- [Movie Review] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-25T07:13:54.542+06:00 ERROR 26752 --- [Movie Review] [http-nio-8089-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; SQL [insert into movie_images(movie_id, file_name) values(?, ?)]; NULL not allowed for column "ID"; SQL statement:
+insert into movie_images(movie_id, file_name) values(?, ?) [23502-214]] with root cause
+
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: NULL not allowed for column "ID"; SQL statement:
+insert into movie_images(movie_id, file_name) values(?, ?) [23502-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.table.Table.convertInsertRow(Table.java:926) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.dml.Insert.update(Insert.java:135) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeUpdate(Command.java:252) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1016) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1026) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at kg.attractor.movie.dao.MovieImageDao.saveImage(MovieImageDao.java:28) ~[classes/:na]
+	at kg.attractor.movie.service.impl.ImageServiceImpl.saveImage(ImageServiceImpl.java:25) ~[classes/:na]
+	at kg.attractor.movie.controller.ImageController.uploadImage(ImageController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-25T07:18:10.922+06:00 ERROR 26752 --- [Movie Review] [http-nio-8089-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; SQL [insert into movie_images(movie_id, file_name) values(?, ?)]; NULL not allowed for column "ID"; SQL statement:
+insert into movie_images(movie_id, file_name) values(?, ?) [23502-214]] with root cause
+
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: NULL not allowed for column "ID"; SQL statement:
+insert into movie_images(movie_id, file_name) values(?, ?) [23502-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.table.Table.convertInsertRow(Table.java:926) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.dml.Insert.update(Insert.java:135) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeUpdate(Command.java:252) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1016) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1026) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at kg.attractor.movie.dao.MovieImageDao.saveImage(MovieImageDao.java:28) ~[classes/:na]
+	at kg.attractor.movie.service.impl.ImageServiceImpl.saveImage(ImageServiceImpl.java:25) ~[classes/:na]
+	at kg.attractor.movie.controller.ImageController.uploadImage(ImageController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-25T07:25:47.158+06:00  INFO 26752 --- [Movie Review] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-25T07:25:47.195+06:00  INFO 26752 --- [Movie Review] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-25T07:25:47.220+06:00  INFO 26752 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T07:25:47.259+06:00  INFO 26752 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-25T07:25:58.209+06:00  INFO 24992 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 24992 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T07:25:58.215+06:00  INFO 24992 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T07:26:00.810+06:00  INFO 24992 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T07:26:00.830+06:00  INFO 24992 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T07:26:00.831+06:00  INFO 24992 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T07:26:00.943+06:00  INFO 24992 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T07:26:00.944+06:00  INFO 24992 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2583 ms
+2025-03-25T07:26:01.257+06:00  INFO 24992 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T07:26:01.780+06:00  INFO 24992 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T07:26:01.783+06:00  INFO 24992 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T07:26:01.873+06:00  INFO 24992 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T07:26:02.174+06:00  INFO 24992 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T07:26:02.574+06:00  INFO 24992 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:26:02.580+06:00  INFO 24992 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T07:26:02.608+06:00  INFO 24992 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T07:26:02.614+06:00  INFO 24992 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T07:26:02.618+06:00  INFO 24992 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T07:26:02.625+06:00  INFO 24992 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T07:26:02.696+06:00  INFO 24992 --- [Movie Review] [main] liquibase.changelog                      : Change failed validation!
+2025-03-25T07:26:02.699+06:00  INFO 24992 --- [Movie Review] [main] liquibase.command                        : Logging exception.
+2025-03-25T07:26:02.699+06:00  INFO 24992 --- [Movie Review] [main] liquibase.ui                             : ERROR: Exception Details
+2025-03-25T07:26:02.700+06:00  INFO 24992 --- [Movie Review] [main] liquibase.ui                             : ERROR: Exception Primary Class:  ValidationFailedException
+2025-03-25T07:26:02.700+06:00  INFO 24992 --- [Movie Review] [main] liquibase.ui                             : ERROR: Exception Primary Reason:  Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/006_movie_images.yaml::006_create_table_for_images::Islam Kaseiinov was: 9:be7fdf4158c416dc31fe29427b70d2f0 but is now: 9:0649fd2f43989e1112ab740908b7531c
+
+2025-03-25T07:26:02.700+06:00  INFO 24992 --- [Movie Review] [main] liquibase.ui                             : ERROR: Exception Primary Source:  4.31.1
+2025-03-25T07:26:02.701+06:00  INFO 24992 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T07:26:03.880+06:00  WARN 24992 --- [Movie Review] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'imageController' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\controller\ImageController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'imageServiceImpl' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\service\impl\ImageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'movieImageDao' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\dao\MovieImageDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/006_movie_images.yaml::006_create_table_for_images::Islam Kaseiinov was: 9:be7fdf4158c416dc31fe29427b70d2f0 but is now: 9:0649fd2f43989e1112ab740908b7531c
+
+2025-03-25T07:26:03.882+06:00  INFO 24992 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T07:26:03.911+06:00  INFO 24992 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-25T07:26:03.916+06:00  INFO 24992 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-25T07:26:03.933+06:00  INFO 24992 --- [Movie Review] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-25T07:26:03.976+06:00 ERROR 24992 --- [Movie Review] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'imageController' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\controller\ImageController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'imageServiceImpl' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\service\impl\ImageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'movieImageDao' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\dao\MovieImageDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/006_movie_images.yaml::006_create_table_for_images::Islam Kaseiinov was: 9:be7fdf4158c416dc31fe29427b70d2f0 but is now: 9:0649fd2f43989e1112ab740908b7531c
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at kg.attractor.movie.MovieApplication.main(MovieApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'imageServiceImpl' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\service\impl\ImageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'movieImageDao' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\dao\MovieImageDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/006_movie_images.yaml::006_create_table_for_images::Islam Kaseiinov was: 9:be7fdf4158c416dc31fe29427b70d2f0 but is now: 9:0649fd2f43989e1112ab740908b7531c
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'movieImageDao' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\dao\MovieImageDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/006_movie_images.yaml::006_create_table_for_images::Islam Kaseiinov was: 9:be7fdf4158c416dc31fe29427b70d2f0 but is now: 9:0649fd2f43989e1112ab740908b7531c
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/006_movie_images.yaml::006_create_table_for_images::Islam Kaseiinov was: 9:be7fdf4158c416dc31fe29427b70d2f0 but is now: 9:0649fd2f43989e1112ab740908b7531c
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 48 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/006_movie_images.yaml::006_create_table_for_images::Islam Kaseiinov was: 9:be7fdf4158c416dc31fe29427b70d2f0 but is now: 9:0649fd2f43989e1112ab740908b7531c
+
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:288) ~[liquibase-core-4.31.1.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 60 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/006_movie_images.yaml::006_create_table_for_images::Islam Kaseiinov was: 9:be7fdf4158c416dc31fe29427b70d2f0 but is now: 9:0649fd2f43989e1112ab740908b7531c
+
+	at liquibase.command.CommandScope.lambda$execute$6(CommandScope.java:300) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.child(Scope.java:210) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:241) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:201) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.child(Scope.java:210) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.child(Scope.java:200) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.child(Scope.java:179) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1333) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:205) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:188) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:326) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:278) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:201) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.child(Scope.java:210) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.child(Scope.java:200) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.child(Scope.java:179) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:271) ~[liquibase-core-4.31.1.jar:na]
+	... 62 common frames omitted
+Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/initial/006_movie_images.yaml::006_create_table_for_images::Islam Kaseiinov was: 9:be7fdf4158c416dc31fe29427b70d2f0 but is now: 9:0649fd2f43989e1112ab740908b7531c
+
+	at liquibase.changelog.DatabaseChangeLog.validate(DatabaseChangeLog.java:384) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:88) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.command.CommandScope.lambda$execute$6(CommandScope.java:253) ~[liquibase-core-4.31.1.jar:na]
+	... 80 common frames omitted
+
+2025-03-25T07:28:09.830+06:00  INFO 23284 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 23284 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T07:28:09.834+06:00  INFO 23284 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T07:28:12.180+06:00  INFO 23284 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T07:28:12.226+06:00  INFO 23284 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T07:28:12.229+06:00  INFO 23284 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T07:28:12.437+06:00  INFO 23284 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T07:28:12.437+06:00  INFO 23284 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2516 ms
+2025-03-25T07:28:12.793+06:00  INFO 23284 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T07:28:14.346+06:00  WARN 23284 --- [Movie Review] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'imageController' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\controller\ImageController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'imageServiceImpl' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\service\impl\ImageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'movieImageDao' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\dao\MovieImageDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Unsupported database file version or invalid file header in file "C:/Users/izlax/OneDrive/Рабочий стол/homework/movie/movie/db/test.mv.db" [90048-214]
+2025-03-25T07:28:14.359+06:00  INFO 23284 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-25T07:28:14.399+06:00  INFO 23284 --- [Movie Review] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-25T07:28:14.501+06:00 ERROR 23284 --- [Movie Review] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'imageController' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\controller\ImageController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'imageServiceImpl' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\service\impl\ImageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'movieImageDao' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\dao\MovieImageDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Unsupported database file version or invalid file header in file "C:/Users/izlax/OneDrive/Рабочий стол/homework/movie/movie/db/test.mv.db" [90048-214]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at kg.attractor.movie.MovieApplication.main(MovieApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'imageServiceImpl' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\service\impl\ImageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'movieImageDao' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\dao\MovieImageDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Unsupported database file version or invalid file header in file "C:/Users/izlax/OneDrive/Рабочий стол/homework/movie/movie/db/test.mv.db" [90048-214]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'movieImageDao' defined in file [C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes\kg\attractor\movie\dao\MovieImageDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Unsupported database file version or invalid file header in file "C:/Users/izlax/OneDrive/Рабочий стол/homework/movie/movie/db/test.mv.db" [90048-214]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Unsupported database file version or invalid file header in file "C:/Users/izlax/OneDrive/Рабочий стол/homework/movie/movie/db/test.mv.db" [90048-214]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 48 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.DatabaseException: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Unsupported database file version or invalid file header in file "C:/Users/izlax/OneDrive/Рабочий стол/homework/movie/movie/db/test.mv.db" [90048-214]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:288) ~[liquibase-core-4.31.1.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 60 common frames omitted
+Caused by: liquibase.exception.DatabaseException: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Unsupported database file version or invalid file header in file "C:/Users/izlax/OneDrive/Рабочий стол/homework/movie/movie/db/test.mv.db" [90048-214]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:280) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:201) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.child(Scope.java:210) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.child(Scope.java:200) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.Scope.child(Scope.java:179) ~[liquibase-core-4.31.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:271) ~[liquibase-core-4.31.1.jar:na]
+	... 62 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Unsupported database file version or invalid file header in file "C:/Users/izlax/OneDrive/Рабочий стол/homework/movie/movie/db/test.mv.db" [90048-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:212) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:161) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.mvstore.db.Store.<init>(Store.java:145) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.Database.<init>(Database.java:324) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.Engine.openSession(Engine.java:92) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.Engine.openSession(Engine.java:222) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.Engine.createSession(Engine.java:201) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.Driver.connect(Driver.java:59) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:275) ~[liquibase-core-4.31.1.jar:na]
+	... 67 common frames omitted
+Caused by: org.h2.mvstore.MVStoreException: The write format 3 is larger than the supported format 2 [2.1.214/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1066) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:883) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:463) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.mvstore.db.Store.<init>(Store.java:136) ~[h2-2.1.214.jar:2.1.214]
+	... 82 common frames omitted
+
+2025-03-25T07:34:27.248+06:00  INFO 24672 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 24672 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T07:34:27.259+06:00  INFO 24672 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T07:34:34.354+06:00  INFO 24672 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T07:34:34.421+06:00  INFO 24672 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T07:34:34.429+06:00  INFO 24672 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T07:34:34.777+06:00  INFO 24672 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T07:34:34.783+06:00  INFO 24672 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7423 ms
+2025-03-25T07:34:36.098+06:00  INFO 24672 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T07:34:36.819+06:00  INFO 24672 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T07:34:36.825+06:00  INFO 24672 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T07:34:36.960+06:00  INFO 24672 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T07:34:37.273+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T07:34:37.598+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2025-03-25T07:34:37.772+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:34:37.779+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T07:34:37.843+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T07:34:37.850+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T07:34:37.855+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T07:34:37.866+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T07:34:37.885+06:00  INFO 24672 --- [Movie Review] [main] liquibase.snapshot                       : Creating snapshot
+2025-03-25T07:34:37.998+06:00  INFO 24672 --- [Movie Review] [main] liquibase.lockservice                    : Successfully acquired change log lock
+2025-03-25T07:34:37.999+06:00  INFO 24672 --- [Movie Review] [main] liquibase.command                        : Using deploymentId: 2866476025
+2025-03-25T07:34:38.002+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:34:38.058+06:00  INFO 24672 --- [Movie Review] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/001_create_tables.yaml::create-director-table::author
+2025-03-25T07:34:38.076+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Table director created
+2025-03-25T07:34:38.079+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001_create_tables.yaml::create-director-table::author ran successfully in 19ms
+2025-03-25T07:34:38.115+06:00  INFO 24672 --- [Movie Review] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/001_create_tables.yaml::create-movie-table::author
+2025-03-25T07:34:38.132+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Table movie created
+2025-03-25T07:34:38.133+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001_create_tables.yaml::create-movie-table::author ran successfully in 16ms
+2025-03-25T07:34:38.135+06:00  INFO 24672 --- [Movie Review] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/001_create_tables.yaml::create-cast-member-table::author
+2025-03-25T07:34:38.138+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Table cast_member created
+2025-03-25T07:34:38.138+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001_create_tables.yaml::create-cast-member-table::author ran successfully in 2ms
+2025-03-25T07:34:38.142+06:00  INFO 24672 --- [Movie Review] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/001_create_tables.yaml::create-movie-cast-member-table::author
+2025-03-25T07:34:38.150+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Table movie_cast_member created
+2025-03-25T07:34:38.151+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001_create_tables.yaml::create-movie-cast-member-table::author ran successfully in 7ms
+2025-03-25T07:34:38.158+06:00  INFO 24672 --- [Movie Review] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/002_insert_movies.sql::raw::includeAll
+2025-03-25T07:34:38.336+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Custom SQL executed
+2025-03-25T07:34:38.343+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/002_insert_movies.sql::raw::includeAll ran successfully in 184ms
+2025-03-25T07:34:38.350+06:00  INFO 24672 --- [Movie Review] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/003_create_table.yml::001_create_user_table::Islam Kaseiinov
+2025-03-25T07:34:38.355+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Table users created
+2025-03-25T07:34:38.355+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/003_create_table.yml::001_create_user_table::Islam Kaseiinov ran successfully in 5ms
+2025-03-25T07:34:38.361+06:00  INFO 24672 --- [Movie Review] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/004_delete_users.yaml::004_delete_user_table::Islam Kaseiinov
+2025-03-25T07:34:38.368+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Table users dropped
+2025-03-25T07:34:38.371+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/004_delete_users.yaml::004_delete_user_table::Islam Kaseiinov ran successfully in 9ms
+2025-03-25T07:34:38.378+06:00  INFO 24672 --- [Movie Review] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/005_review_table.yaml::005_create_table_review_and_user::Islam Kaseiinov
+2025-03-25T07:34:38.381+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Table users created
+2025-03-25T07:34:38.388+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Table review created
+2025-03-25T07:34:38.388+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/005_review_table.yaml::005_create_table_review_and_user::Islam Kaseiinov ran successfully in 10ms
+2025-03-25T07:34:38.391+06:00  INFO 24672 --- [Movie Review] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/006_movie_images.yaml::006_create_table_for_images::Islam Kaseiinov
+2025-03-25T07:34:38.398+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : Table movie_images created
+2025-03-25T07:34:38.399+06:00  INFO 24672 --- [Movie Review] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/006_movie_images.yaml::006_create_table_for_images::Islam Kaseiinov ran successfully in 7ms
+2025-03-25T07:34:38.472+06:00  INFO 24672 --- [Movie Review] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-25T07:34:38.472+06:00  INFO 24672 --- [Movie Review] [main] liquibase.util                           : Run:                          9
+2025-03-25T07:34:38.472+06:00  INFO 24672 --- [Movie Review] [main] liquibase.util                           : Previously run:               0
+2025-03-25T07:34:38.472+06:00  INFO 24672 --- [Movie Review] [main] liquibase.util                           : Filtered out:                 0
+2025-03-25T07:34:38.473+06:00  INFO 24672 --- [Movie Review] [main] liquibase.util                           : -------------------------------
+2025-03-25T07:34:38.473+06:00  INFO 24672 --- [Movie Review] [main] liquibase.util                           : Total change sets:            9
+2025-03-25T07:34:38.474+06:00  INFO 24672 --- [Movie Review] [main] liquibase.util                           : Update summary generated
+2025-03-25T07:34:38.480+06:00  INFO 24672 --- [Movie Review] [main] liquibase.command                        : Update command completed successfully.
+2025-03-25T07:34:38.480+06:00  INFO 24672 --- [Movie Review] [main] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 27
+2025-03-25T07:34:38.483+06:00  INFO 24672 --- [Movie Review] [main] liquibase.lockservice                    : Successfully released change log lock
+2025-03-25T07:34:38.485+06:00  INFO 24672 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T07:34:40.166+06:00  INFO 24672 --- [Movie Review] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-25T07:34:40.787+06:00  INFO 24672 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-03-25T07:34:40.800+06:00  INFO 24672 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Started MovieApplication in 14.738 seconds (process running for 16.129)
+2025-03-25T07:34:56.018+06:00  INFO 24672 --- [Movie Review] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-25T07:34:56.019+06:00  INFO 24672 --- [Movie Review] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-25T07:34:56.021+06:00  INFO 24672 --- [Movie Review] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-25T07:34:56.452+06:00 ERROR 24672 --- [Movie Review] [http-nio-8089-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; SQL [insert into movie_images(movie_id, file_name) values(?, ?)]; NULL not allowed for column "MOVIE_ID"; SQL statement:
+insert into movie_images(movie_id, file_name) values(?, ?) [23502-214]] with root cause
+
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: NULL not allowed for column "MOVIE_ID"; SQL statement:
+insert into movie_images(movie_id, file_name) values(?, ?) [23502-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.table.Table.convertInsertRow(Table.java:926) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.dml.Insert.update(Insert.java:135) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeUpdate(Command.java:252) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1016) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1026) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at kg.attractor.movie.dao.MovieImageDao.saveImage(MovieImageDao.java:28) ~[classes/:na]
+	at kg.attractor.movie.service.impl.ImageServiceImpl.saveImage(ImageServiceImpl.java:27) ~[classes/:na]
+	at kg.attractor.movie.controller.ImageController.uploadImage(ImageController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-25T07:40:19.785+06:00  INFO 24672 --- [Movie Review] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-25T07:40:19.829+06:00  INFO 24672 --- [Movie Review] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-25T07:40:19.899+06:00  INFO 24672 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T07:40:19.947+06:00  INFO 24672 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-25T07:40:33.198+06:00  INFO 30580 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 30580 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T07:40:33.205+06:00  INFO 30580 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T07:40:36.480+06:00  INFO 30580 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T07:40:36.506+06:00  INFO 30580 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T07:40:36.507+06:00  INFO 30580 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T07:40:36.656+06:00  INFO 30580 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T07:40:36.656+06:00  INFO 30580 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3341 ms
+2025-03-25T07:40:36.958+06:00  INFO 30580 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T07:40:37.612+06:00  INFO 30580 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T07:40:37.616+06:00  INFO 30580 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T07:40:37.745+06:00  INFO 30580 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T07:40:38.088+06:00  INFO 30580 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T07:40:38.672+06:00  INFO 30580 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:40:38.686+06:00  INFO 30580 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T07:40:38.726+06:00  INFO 30580 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T07:40:38.735+06:00  INFO 30580 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T07:40:38.741+06:00  INFO 30580 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T07:40:38.753+06:00  INFO 30580 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T07:40:38.873+06:00  INFO 30580 --- [Movie Review] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-25T07:40:38.879+06:00  INFO 30580 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:40:38.916+06:00  INFO 30580 --- [Movie Review] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-25T07:40:38.918+06:00  INFO 30580 --- [Movie Review] [main] liquibase.util                           : Run:                          0
+2025-03-25T07:40:38.918+06:00  INFO 30580 --- [Movie Review] [main] liquibase.util                           : Previously run:               9
+2025-03-25T07:40:38.919+06:00  INFO 30580 --- [Movie Review] [main] liquibase.util                           : Filtered out:                 0
+2025-03-25T07:40:38.919+06:00  INFO 30580 --- [Movie Review] [main] liquibase.util                           : -------------------------------
+2025-03-25T07:40:38.920+06:00  INFO 30580 --- [Movie Review] [main] liquibase.util                           : Total change sets:            9
+2025-03-25T07:40:38.922+06:00  INFO 30580 --- [Movie Review] [main] liquibase.util                           : Update summary generated
+2025-03-25T07:40:38.924+06:00  INFO 30580 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T07:40:42.715+06:00  INFO 30580 --- [Movie Review] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-25T07:40:45.869+06:00  INFO 30580 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-03-25T07:40:45.904+06:00  INFO 30580 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Started MovieApplication in 14.117 seconds (process running for 16.167)
+2025-03-25T07:41:07.383+06:00  INFO 30580 --- [Movie Review] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-25T07:41:07.384+06:00  INFO 30580 --- [Movie Review] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-25T07:41:07.387+06:00  INFO 30580 --- [Movie Review] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-03-25T07:41:07.499+06:00 ERROR 30580 --- [Movie Review] [http-nio-8089-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [select * from movie_images where image_id = ?]] with root cause
+
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "IMAGE_ID" not found; SQL statement:
+select * from movie_images where image_id = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:139) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.query.Query.prepare(Query.java:218) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.prepareCommand(Parser.java:575) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:328) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-5.1.0.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1719) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:656) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:723) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:754) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:767) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:825) ~[spring-jdbc-6.2.3.jar:6.2.3]
+	at kg.attractor.movie.dao.MovieImageDao.getImageById(MovieImageDao.java:21) ~[classes/:na]
+	at kg.attractor.movie.service.impl.ImageServiceImpl.findById(ImageServiceImpl.java:37) ~[classes/:na]
+	at kg.attractor.movie.controller.ImageController.getImageById(ImageController.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-25T07:43:22.511+06:00  INFO 30580 --- [Movie Review] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-25T07:43:22.524+06:00  INFO 30580 --- [Movie Review] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-25T07:43:22.531+06:00  INFO 30580 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T07:43:22.533+06:00  INFO 30580 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-25T07:43:43.604+06:00  INFO 30960 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 30960 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T07:43:43.607+06:00  INFO 30960 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T07:43:45.889+06:00  INFO 30960 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T07:43:45.910+06:00  INFO 30960 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T07:43:45.911+06:00  INFO 30960 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T07:43:46.017+06:00  INFO 30960 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T07:43:46.018+06:00  INFO 30960 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2306 ms
+2025-03-25T07:43:46.267+06:00  INFO 30960 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T07:43:46.802+06:00  INFO 30960 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T07:43:46.806+06:00  INFO 30960 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T07:43:46.901+06:00  INFO 30960 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T07:43:47.190+06:00  INFO 30960 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T07:43:47.692+06:00  INFO 30960 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:43:47.697+06:00  INFO 30960 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T07:43:47.728+06:00  INFO 30960 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T07:43:47.736+06:00  INFO 30960 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T07:43:47.741+06:00  INFO 30960 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T07:43:47.749+06:00  INFO 30960 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T07:43:47.844+06:00  INFO 30960 --- [Movie Review] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-25T07:43:47.847+06:00  INFO 30960 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T07:43:47.864+06:00  INFO 30960 --- [Movie Review] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-25T07:43:47.864+06:00  INFO 30960 --- [Movie Review] [main] liquibase.util                           : Run:                          0
+2025-03-25T07:43:47.864+06:00  INFO 30960 --- [Movie Review] [main] liquibase.util                           : Previously run:               9
+2025-03-25T07:43:47.864+06:00  INFO 30960 --- [Movie Review] [main] liquibase.util                           : Filtered out:                 0
+2025-03-25T07:43:47.865+06:00  INFO 30960 --- [Movie Review] [main] liquibase.util                           : -------------------------------
+2025-03-25T07:43:47.865+06:00  INFO 30960 --- [Movie Review] [main] liquibase.util                           : Total change sets:            9
+2025-03-25T07:43:47.866+06:00  INFO 30960 --- [Movie Review] [main] liquibase.util                           : Update summary generated
+2025-03-25T07:43:47.869+06:00  INFO 30960 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T07:43:49.828+06:00  INFO 30960 --- [Movie Review] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-25T07:43:50.813+06:00  INFO 30960 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-03-25T07:43:50.838+06:00  INFO 30960 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Started MovieApplication in 8.349 seconds (process running for 9.82)
+2025-03-25T07:43:53.127+06:00  INFO 30960 --- [Movie Review] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-25T07:43:53.128+06:00  INFO 30960 --- [Movie Review] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-25T07:43:53.130+06:00  INFO 30960 --- [Movie Review] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
