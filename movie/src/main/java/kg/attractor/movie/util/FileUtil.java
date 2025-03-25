@@ -3,7 +3,11 @@ package kg.attractor.movie.util;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
+import kg.attractor.movie.dao.MovieImageDao;
+import kg.attractor.movie.exceptions.ImageNotFoundException;
 import kg.attractor.movie.model.Movie;
+import kg.attractor.movie.model.MovieImage;
+import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
@@ -26,15 +30,12 @@ import java.util.Map;
 import java.util.UUID;
 
 @Service
+@RequiredArgsConstructor
 public class FileUtil {
 
-    private final Gson gson;
+    private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private final static String UPLOAD_DIR = "data/";
 
-//    @Autowired
-    public FileUtil() {
-        gson = new GsonBuilder().setPrettyPrinting().create();
-    }
 
     public List<Movie> getMovies(String path) {
         Type listType = new TypeToken<Map<String, List<Movie>>>() {
@@ -85,4 +86,6 @@ public class FileUtil {
 
         }
     }
+
+
 }

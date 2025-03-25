@@ -4,7 +4,7 @@ create table if not exists users(
     password varchar(100)
 );
 
-insert into users(name, password)
-values('john','qwerty'),('Jane','1234');
-
-select * from users;
+-- insert into users(name, password)
+-- values('john','qwerty'),('Jane','1234');
+--
+-- select * from users;

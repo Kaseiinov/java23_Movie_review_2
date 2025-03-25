@@ -14,14 +14,13 @@ import java.util.List;
 public class Movie {
     private int id;
     private String name;
-    private int year;
+    private int releaseYear;
     private String description;
-    private Director director;
-    private List<Cast> cast;
+    private int directorId;
 
     @Override
     public String toString() {
-        return String.format("Фильм: <<%s>>,\nГод выпуска: %s,\nОписание: %s,\n%s,\nАктеры: %s", name, year, description, director, cast);
+        return String.format("Фильм: <<%s>>,%nГод выпуска: %s,%nОписание: %s,%n%s", name, releaseYear, description, directorId);
 
     }
 }

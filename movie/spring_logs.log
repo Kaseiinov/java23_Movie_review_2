@@ -1,0 +1,70 @@
+2025-03-25T00:00:18.417+06:00  INFO 29652 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 29652 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T00:00:18.437+06:00  INFO 29652 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T00:00:21.973+06:00  INFO 29652 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T00:00:21.997+06:00  INFO 29652 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T00:00:21.998+06:00  INFO 29652 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T00:00:22.106+06:00  INFO 29652 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T00:00:22.106+06:00  INFO 29652 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3520 ms
+2025-03-25T00:00:22.467+06:00  INFO 29652 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T00:00:23.786+06:00  INFO 29652 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T00:00:23.792+06:00  INFO 29652 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T00:00:23.948+06:00  INFO 29652 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T00:00:24.526+06:00  INFO 29652 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T00:00:25.632+06:00  INFO 29652 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T00:00:25.641+06:00  INFO 29652 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T00:00:25.678+06:00  INFO 29652 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T00:00:25.686+06:00  INFO 29652 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T00:00:25.693+06:00  INFO 29652 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T00:00:25.709+06:00  INFO 29652 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T00:00:25.860+06:00  INFO 29652 --- [Movie Review] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-25T00:00:25.866+06:00  INFO 29652 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T00:00:25.934+06:00  INFO 29652 --- [Movie Review] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-25T00:00:25.936+06:00  INFO 29652 --- [Movie Review] [main] liquibase.util                           : Run:                          0
+2025-03-25T00:00:25.940+06:00  INFO 29652 --- [Movie Review] [main] liquibase.util                           : Previously run:               9
+2025-03-25T00:00:25.941+06:00  INFO 29652 --- [Movie Review] [main] liquibase.util                           : Filtered out:                 0
+2025-03-25T00:00:25.942+06:00  INFO 29652 --- [Movie Review] [main] liquibase.util                           : -------------------------------
+2025-03-25T00:00:25.944+06:00  INFO 29652 --- [Movie Review] [main] liquibase.util                           : Total change sets:            9
+2025-03-25T00:00:25.950+06:00  INFO 29652 --- [Movie Review] [main] liquibase.util                           : Update summary generated
+2025-03-25T00:00:25.959+06:00  INFO 29652 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T00:00:28.209+06:00  INFO 29652 --- [Movie Review] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-25T00:00:29.776+06:00  INFO 29652 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-03-25T00:00:29.796+06:00  INFO 29652 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Started MovieApplication in 13.348 seconds (process running for 15.52)
+2025-03-25T00:01:05.401+06:00  INFO 29652 --- [Movie Review] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-25T00:01:05.421+06:00  INFO 29652 --- [Movie Review] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-25T00:01:05.434+06:00  INFO 29652 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T00:01:05.489+06:00  INFO 29652 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-25T00:01:14.020+06:00  INFO 29864 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Starting MovieApplication using Java 21.0.6 with PID 29864 (C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie\target\classes started by izlax in C:\Users\izlax\OneDrive\Рабочий стол\homework\movie\movie)
+2025-03-25T00:01:14.029+06:00  INFO 29864 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T00:01:17.251+06:00  INFO 29864 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-03-25T00:01:17.277+06:00  INFO 29864 --- [Movie Review] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T00:01:17.278+06:00  INFO 29864 --- [Movie Review] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25T00:01:17.404+06:00  INFO 29864 --- [Movie Review] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T00:01:17.405+06:00  INFO 29864 --- [Movie Review] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3245 ms
+2025-03-25T00:01:17.751+06:00  INFO 29864 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-25T00:01:18.461+06:00  INFO 29864 --- [Movie Review] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2025-03-25T00:01:18.466+06:00  INFO 29864 --- [Movie Review] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-25T00:01:18.610+06:00  INFO 29864 --- [Movie Review] [main] liquibase.database                       : Set default schema name to PUBLIC
+2025-03-25T00:01:19.035+06:00  INFO 29864 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/001_create_tables.yaml
+2025-03-25T00:01:19.697+06:00  INFO 29864 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T00:01:19.706+06:00  INFO 29864 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/002_insert_movies.sql
+2025-03-25T00:01:19.745+06:00  INFO 29864 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/003_create_table.yml
+2025-03-25T00:01:19.754+06:00  INFO 29864 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/004_delete_users.yaml
+2025-03-25T00:01:19.760+06:00  INFO 29864 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/005_review_table.yaml
+2025-03-25T00:01:19.771+06:00  INFO 29864 --- [Movie Review] [main] liquibase.changelog                      : Reading resource: db/changelog/initial/006_movie_images.yaml
+2025-03-25T00:01:19.919+06:00  INFO 29864 --- [Movie Review] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-25T00:01:19.925+06:00  INFO 29864 --- [Movie Review] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2025-03-25T00:01:19.963+06:00  INFO 29864 --- [Movie Review] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-25T00:01:19.964+06:00  INFO 29864 --- [Movie Review] [main] liquibase.util                           : Run:                          0
+2025-03-25T00:01:19.964+06:00  INFO 29864 --- [Movie Review] [main] liquibase.util                           : Previously run:               9
+2025-03-25T00:01:19.965+06:00  INFO 29864 --- [Movie Review] [main] liquibase.util                           : Filtered out:                 0
+2025-03-25T00:01:19.965+06:00  INFO 29864 --- [Movie Review] [main] liquibase.util                           : -------------------------------
+2025-03-25T00:01:19.965+06:00  INFO 29864 --- [Movie Review] [main] liquibase.util                           : Total change sets:            9
+2025-03-25T00:01:19.968+06:00  INFO 29864 --- [Movie Review] [main] liquibase.util                           : Update summary generated
+2025-03-25T00:01:19.972+06:00  INFO 29864 --- [Movie Review] [main] liquibase.command                        : Command execution complete
+2025-03-25T00:01:22.104+06:00  INFO 29864 --- [Movie Review] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-25T00:01:23.283+06:00  INFO 29864 --- [Movie Review] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-03-25T00:01:23.304+06:00  INFO 29864 --- [Movie Review] [main] kg.attractor.movie.MovieApplication      : Started MovieApplication in 10.935 seconds (process running for 12.847)
+2025-03-25T00:01:38.451+06:00  INFO 29864 --- [Movie Review] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-25T00:01:38.468+06:00  INFO 29864 --- [Movie Review] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-25T00:01:38.477+06:00  INFO 29864 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-25T00:01:38.517+06:00  INFO 29864 --- [Movie Review] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

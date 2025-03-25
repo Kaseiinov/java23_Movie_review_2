@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 004_delete_user_table
+      author: Islam Kaseiinov
+      changes:
+        - dropTable:
+            tableName: users
