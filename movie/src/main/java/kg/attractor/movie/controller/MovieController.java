@@ -23,7 +23,7 @@ public class MovieController {
     }
 
     @GetMapping("{movieId}")
-    public MovieDto getMovie(@PathVariable("movieId") String movieId) {
+    public MovieDto getMovieById(@PathVariable("movieId") String movieId) {
         return movieService.getMovieById(movieId);
     }
 

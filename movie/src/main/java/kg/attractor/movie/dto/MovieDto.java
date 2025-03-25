@@ -18,7 +18,7 @@ public class MovieDto {
     private String name;
     private Integer year;
     private String description;
-    private Director director;
+    private DirectorDto director;
     private List<Cast> cast;
 
 }

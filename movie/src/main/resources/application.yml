@@ -9,8 +9,17 @@ spring:
     username: root
     password: qwerty
     driver-class-name: org.h2.Driver
-  sql:
-    init:
-      mode: always
+#  sql:
+#    init:
+#      mode: always
   liquibase:
     change-log: classpath:/db/changelog/master.yml
+
+logging:
+  level:
+    root: info
+  file:
+    path: logs
+#    name: spring_logs.log
+#  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
