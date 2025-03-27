@@ -21,6 +21,7 @@ public class UserServiceImpl implements UserService {
         return list.stream()
                 .map(e -> UserDto.builder()
                         .id(e.getId())
+                        .email(e.getEmail())
                         .name(e.getName())
                         .password(e.getPassword())
                         .build())
@@ -33,6 +34,7 @@ public class UserServiceImpl implements UserService {
                 .orElseThrow(UserNotFoundException::new);
         return UserDto.builder()
                 .id(user.getId())
+                .email(user.getEmail())
                 .name(user.getName())
                 .password(user.getPassword())
                 .build();
@@ -42,6 +44,7 @@ public class UserServiceImpl implements UserService {
     public void addUser(UserDto userDto) {
         User user = new User();
         user.setName(userDto.getName());
+        user.setEmail(userDto.getEmail());
         user.setPassword(userDto.getPassword());
         userDao.createUser(user);
     }
@@ -50,6 +53,7 @@ public class UserServiceImpl implements UserService {
     public int createUserAndReturnId(UserDto userDto) {
         User user = new User();
         user.setName(userDto.getName());
+        user.setEmail(userDto.getEmail());
         user.setPassword(userDto.getPassword());
         return userDao.createUserAndReturnId(user);
     }

@@ -1,6 +1,8 @@
 package kg.attractor.movie.exceptions;
 
-public class MovieNotFoundException extends RuntimeException {
+import java.util.NoSuchElementException;
+
+public class MovieNotFoundException extends NoSuchElementException {
     public MovieNotFoundException() {
         super("Movie not found");
     }

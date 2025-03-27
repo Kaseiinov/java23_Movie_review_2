@@ -1,6 +1,8 @@
 package kg.attractor.movie.exceptions;
 
-public class DirectorNotFoundException extends RuntimeException {
+import java.util.NoSuchElementException;
+
+public class DirectorNotFoundException extends NoSuchElementException {
     public DirectorNotFoundException() {
         super("Director not found");
     }

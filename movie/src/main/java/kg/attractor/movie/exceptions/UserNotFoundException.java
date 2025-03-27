@@ -1,6 +1,8 @@
 package kg.attractor.movie.exceptions;
 
-public class UserNotFoundException extends RuntimeException {
+import java.util.NoSuchElementException;
+
+public class UserNotFoundException extends NoSuchElementException {
     public UserNotFoundException() {
         super("User not found.");
     }

@@ -1,12 +1,15 @@
 package kg.attractor.movie.controller;
 
+import jakarta.validation.Valid;
 import kg.attractor.movie.dto.UserDto;
 import kg.attractor.movie.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @RestController
 @RequestMapping("users")
@@ -25,14 +28,19 @@ public class UserController {
     }
 
     @PostMapping
-    public HttpStatus createUser(@RequestBody UserDto userDto) {
+    public HttpStatus createUser(@RequestBody @Valid UserDto userDto) {
         userService.addUser(userDto);
         return HttpStatus.OK;
     }
 
     @PostMapping("withId")
-    public int createaUserAndReturnId(@RequestBody UserDto userDto) {
+    public int createUserAndReturnId(@RequestBody @Valid UserDto userDto) {
          return userService.createUserAndReturnId(userDto);
 
     }
+
+//    @ExceptionHandler(NoSuchElementException.class)
+//    public ErrorResponse handleNoSuchElementException(NoSuchElementException e){
+//        return ErrorResponse.builder(e, HttpStatus.NO_CONTENT, e.getMessage()).build();
+//    }
 }

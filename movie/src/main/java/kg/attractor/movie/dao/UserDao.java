@@ -42,24 +42,26 @@ public class UserDao {
     }
 
     public void createUser(User user) {
-        String sql = "insert into users(name, password) " +
-                "values(:name, :password)";
+        String sql = "insert into users(email, username, password) " +
+                "values(:email, :name, :password)";
 
         namedParameterJdbcTemplate.update(sql,
                 new MapSqlParameterSource()
+                        .addValue("email", user.getEmail())
                         .addValue("name", user.getName())
                         .addValue("password", user.getPassword())
         );
     }
 
     public int createUserAndReturnId(User user) {
-        String sql = "insert into users(name, password) " +
-                "values(?, ?)";
+        String sql = "insert into users(email, name, password) " +
+                "values(?, ?, ?)";
         jdbcTemplate.update(
                 con -> {
                     PreparedStatement ps = con.prepareStatement(sql, new String[]{"id"} );
-                    ps.setString(1, user.getName());
-                    ps.setString(2, user.getPassword());
+                    ps.setString(1, user.getEmail());
+                    ps.setString(2, user.getName());
+                    ps.setString(3, user.getPassword());
                     return ps;
                 }, keyHolder
         );
