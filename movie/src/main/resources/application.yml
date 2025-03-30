@@ -18,6 +18,9 @@ spring:
 logging:
   level:
     root: info
+    org:
+      springframework:
+        security: debug
   file:
     path: logs
 #    name: spring_logs.log
