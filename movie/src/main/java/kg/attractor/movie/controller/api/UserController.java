@@ -1,18 +1,16 @@
-package kg.attractor.movie.controller;
+package kg.attractor.movie.controller.api;
 
 import jakarta.validation.Valid;
 import kg.attractor.movie.dto.UserDto;
 import kg.attractor.movie.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.NoSuchElementException;
 
 @RestController
-@RequestMapping("users")
+@RequestMapping("api/users")
 @RequiredArgsConstructor
 public class UserController {
     private final UserService userService;
