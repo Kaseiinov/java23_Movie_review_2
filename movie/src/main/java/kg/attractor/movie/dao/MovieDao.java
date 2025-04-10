@@ -28,4 +28,14 @@ public class MovieDao {
                 )
         );
     }
+
+    public List<Movie> getMoviePagination(int offset, int page) {
+        String sql = "select * from movie limit ? offset ?";
+        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Movie.class), page, offset);
+    }
+
+    public Integer getMovieCount(){
+        String sql = "select count(*) from movie";
+        return jdbcTemplate.queryForObject(sql, Integer.class);
+    }
 }

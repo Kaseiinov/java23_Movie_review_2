@@ -32,4 +32,12 @@ public class MovieController {
         movieService.createMovie(movieDto);
         return HttpStatus.OK;
     }
+
+    @GetMapping("preview")
+    public List<MovieDto> getPreviewMovies(
+            @RequestParam(name = "page", required = false, defaultValue = "0") Integer page,
+            @RequestParam(name = "size", required = false, defaultValue = "5") Integer size
+            ) {
+        return movieService.getMovieListPage(page, size);
+    }
 }

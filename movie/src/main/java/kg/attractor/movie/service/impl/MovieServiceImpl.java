@@ -1,6 +1,5 @@
 package kg.attractor.movie.service.impl;
 
-import kg.attractor.movie.dao.DirectorDao;
 import kg.attractor.movie.dao.MovieDao;
 import kg.attractor.movie.dto.MovieDto;
 import kg.attractor.movie.exceptions.MovieNotFoundException;
@@ -12,7 +11,6 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -66,5 +64,34 @@ public class MovieServiceImpl implements MovieService {
                         .directorId(1)
                         .build()
         );
+    }
+
+    @Override
+    public List<MovieDto> getMovieListPage(int page, int size){
+        int total =  movieDao.getMovieCount();
+
+        int offset = page * size;
+        int lastPage = total % size;
+        if(page<=0){
+            offset = 0;
+        }
+        if(page > lastPage){
+            offset = total - lastPage;
+        }
+        if(lastPage == 0){
+            offset = total - size;
+        }
+        List<Movie> movies = movieDao.getMoviePagination(offset, size);
+
+        return movies.stream()
+                .map(e -> MovieDto
+                        .builder()
+                        .id(e.getId())
+                        .name(e.getName())
+                        .year(e.getReleaseYear())
+                        .description(e.getDescription())
+                        .build())
+                .toList();
+
     }
 }
