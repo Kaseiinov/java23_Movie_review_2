@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 012 insert users into users table
+      author: Islam Kaseiinov
+      changes:
+        - sql:
+#            dbms: any
+            comment: Insert few users into users table
+            sql:
+              insert into users(email, username, password, enabled, role_id)
+              values('qweqwe@.qwe', 'qwe', '$2a$12$WB2YUbFcCN0tm44SBcKUjua9yiFBsfB3vW02IjuwzY7HGtlQIKzy2', TRUE, (select id from role where role = 'ADMIN')),
+              ('qweqwe@.ewq', 'eqw', '$2a$12$WB2YUbFcCN0tm44SBcKUjua9yiFBsfB3vW02IjuwzY7HGtlQIKzy2', TRUE, (select id from role where role = 'GUEST'))

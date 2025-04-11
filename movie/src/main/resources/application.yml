@@ -1,0 +1,33 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: "Movie Review"
+  mvc:
+    static-path-pattern: /static/**
+  freemarker:
+    expose-session-attributes: true
+
+  datasource:
+    url: jdbc:h2:./db/test;AUTO_SERVER=TRUE
+    username: root
+    password: qwerty
+    driver-class-name: org.h2.Driver
+
+  #  sql:
+#    init:
+#      mode: always
+  liquibase:
+    change-log: classpath:/db/changelog/master.yml
+
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        security: debug
+  file:
+    path: logs
+#    name: spring_logs.log
+#  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"

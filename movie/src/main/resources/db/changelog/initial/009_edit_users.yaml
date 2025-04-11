@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 009_add_column_to_table_users
+      author: Islam Kaseiinov
+      changes:
+        - addColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: enabled
+                  type: boolean
+                  constraints:
+                    nullable: false
+              - column:
+                  name: role_id
+                  type: long
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_role_id
+                    references: role(id)
