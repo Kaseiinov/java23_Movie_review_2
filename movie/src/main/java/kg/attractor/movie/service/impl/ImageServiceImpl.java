@@ -38,4 +38,11 @@ public class ImageServiceImpl implements ImageService {
         String fileName = movieImage.getFileName();
         return fileUtil.getOutputFile(fileName, "images/", MediaType.IMAGE_JPEG);
     }
+
+    @Override
+    public ResponseEntity<?> findByMovieId(long movieId){
+        MovieImage image = movieImageDao.getImageById(movieId).orElseThrow(ImageNotFoundException::new);
+        String fileName = image.getFileName();
+        return fileUtil.getOutputFile(fileName, "images/", MediaType.IMAGE_JPEG);
+    }
 }

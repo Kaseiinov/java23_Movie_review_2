@@ -1,21 +1,17 @@
-package kg.attractor.movie.config;
+package kg.attractor.movie_review_java23.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpStatus;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
@@ -53,23 +49,23 @@ public class SecurityConfig {
 //    }
 
     @Autowired
-    public void configure(AuthenticationManagerBuilder auth) throws Exception {
-        String fetchUsers = "select email, password, enabled\n" +
-                "from USERS\n" +
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+        String fetchUser = "select email, password, enabled " +
+                "from users " +
                 "where email = ?";
-        String fetchRoles = "select email, role\n" +
-                "from users u, role r\n" +
-                "where u.email = ?\n" +
-                "and u.ROLE_ID = r.id";
+        String fetchRoles = "select email, role " +
+                "from users u, role r " +
+                "where u.email = ? " +
+                "and u.role_id = r.id";
 
         auth.jdbcAuthentication()
                 .dataSource(dataSource)
-                .usersByUsernameQuery(fetchUsers)
+                .usersByUsernameQuery(fetchUser)
                 .authoritiesByUsernameQuery(fetchRoles);
     }
 
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.ALWAYS))
                 .formLogin(login -> login
@@ -77,20 +73,17 @@ public class SecurityConfig {
                         .loginProcessingUrl("/auth/login")
                         .defaultSuccessUrl("/")
                         .failureUrl("/auth/login?error=true")
-                        .permitAll()
-                )
+                        .permitAll())
                 .logout(logout -> logout
                         .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-                        .permitAll()
-                )
+                        .permitAll())
                 .csrf(AbstractHttpConfigurer::disable)
                 .httpBasic(Customizer.withDefaults())
-                .authorizeHttpRequests(authorizeRequest -> authorizeRequest
+                .authorizeHttpRequests(authorizeRequests -> authorizeRequests
                         .requestMatchers("/reviews/**").fullyAuthenticated()
 //                        .requestMatchers("/movies/**").hasAuthority("ADMIN")
                         .anyRequest().permitAll());
 
         return http.build();
     }
-
 }

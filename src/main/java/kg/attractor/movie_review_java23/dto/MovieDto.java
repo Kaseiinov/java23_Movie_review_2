@@ -1,7 +1,5 @@
-package kg.attractor.movie.dto;
+package kg.attractor.movie_review_java23.dto;
 
-import kg.attractor.movie.model.Cast;
-import kg.attractor.movie.model.Director;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
